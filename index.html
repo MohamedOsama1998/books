@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=decice-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Books</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/queries.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1>I LOVE THESE BOOKS!</h1>
     <div class="container">
-        <div class="booksList item">
-
+        <div class="item">
+            <table>
+                <tr class="tableHeader">
+                    <th>Book name</th>
+                    <th>Year</th>
+                    <th>Author</th>
+                </tr>
+                
+            </table>
         </div>
-        <div class="input item">
-            
+        <div class="item">
+            <form>
+                <input type="text" class="inBookName" placeholder="Book name">
+                <input type="number" class="inBookDate" placeholder="Date of publication">
+                <input type="text" class="inBookAuth" placeholder="Author">
+                <input type="submit" class="submit">
+            </form>
         </div>
     </div>
+    <script src="js/app.js"></script>
 </body>

@@ -19,3 +19,10 @@ class book {
 
     }
 }
+
+$(".submit").click(function(e){
+    e.preventDefault();
+    let b = new book($(".inBookName").val(), $(".inBookAuth").val(), $(".inBookDate").val());
+    books.push(b);
+    b.addBook();
+});
